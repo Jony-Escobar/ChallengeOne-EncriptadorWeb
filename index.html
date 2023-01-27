@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+		<link rel="stylesheet" href="style.css">
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+    
+    <header>
+        <h1 class="logo">
+            <img src="Imagenes/Logo.png" width="120" height="48" alt="logo">
+        </h1>
+    </header>
+    
+    <main>
+        <section class="seccion1">
+            <textarea class="textoUno" cols="20" rows="5" placeholder="Ingrese el texto aqui"></textarea>            
+            <div>
+                <h6 class="adv"><iconify-icon class="icon" icon="bi:exclamation-circle-fill"></iconify-icon>  Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="buttons">
+                <button class="button1" onclick="btnEncriptar()">Encriptar</button>
+                <button class="button2" onclick="btnDesencriptar()">Desencriptar</button>           
+            </div>
+        </section>
+
+        <section class="seccion2">
+            <textarea class="textoDos" cols="20" rows="8" placeholder="Ningun mensaje fue encontrado"></textarea>
+            <div>
+                <button class="copiar" id="copy-btn" style="display: none;" onclick="copyText()">Copiar</button>
+            </div>
+        </section>                                             
+    </main>
+    <script src="script.js"></script>   
+    <footer>
+        <p class="copyr">&copy Jony Escobar - 2023</p>
+    </footer>
+</body>
+</html>
